@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragment.OrderFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="挂号"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_hospital"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_click_selector"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:padding="@dimen/commDimen">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="5dp"
+                android:text="医院" />
+
+            <TextView
+                android:id="@+id/tv_hospital"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="5dp"
+                android:drawableRight="@drawable/ic_chevron_right_black_24dp"
+                android:gravity="right"
+                android:text=""
+                android:textColor="#000" />
+
+
+        </LinearLayout>
+
+        <View style="@style/app_line" />
+
+        <LinearLayout
+            android:id="@+id/ll_cell"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_click_selector"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:padding="@dimen/commDimen">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="5dp"
+                android:text="科室" />
+
+            <TextView
+                android:id="@+id/tv_cell"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="5dp"
+                android:drawableRight="@drawable/ic_chevron_right_black_24dp"
+                android:gravity="right"
+                android:text=""
+                android:textColor="#000" />
+
+
+        </LinearLayout>
+
+        <View style="@style/app_line" />
+
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:background="@drawable/btn_shape"
+            android:text="快速挂号"
+            android:textColor="#fff" />
+
+    </LinearLayout>
+
+</LinearLayout>

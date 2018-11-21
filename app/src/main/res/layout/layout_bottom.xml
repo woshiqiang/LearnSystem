@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:paddingBottom="8dp">
+
+    <View style="@style/app_line" />
+
+    <RadioGroup
+        android:id="@+id/rg_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:paddingTop="5dp">
+
+        <RadioButton
+            android:id="@+id/rb_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:drawableTop="@drawable/home_selector"
+            android:gravity="center"
+            android:text="首页"
+            android:textColor="@drawable/text_color_selector"
+            android:textSize="12dp" />
+
+        <RadioButton
+            android:id="@+id/rb_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/add_selector"
+            android:gravity="center"
+            android:text="测试"
+            android:textColor="@drawable/text_color_selector"
+            android:textSize="12dp" />
+
+
+        <RadioButton
+            android:id="@+id/rb_me"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/me_selector"
+            android:gravity="center"
+            android:text="我的"
+            android:textColor="@drawable/text_color_selector"
+            android:textSize="12dp" />
+    </RadioGroup>
+</LinearLayout>
